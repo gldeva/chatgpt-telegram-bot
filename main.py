@@ -14,6 +14,7 @@ def handle_message(message):
         top_p=1.0,
         frequency_penalty=0.5,
         presence_penalty=0.0,
+        stop=["//::"],
     )
     if response is not None:
         if 'choices' in response and response['choices']:
